@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Map Pin Body in Trinode Orange -->
+  <path d="M256 60 C156 60 76 140 76 240 C76 332 238 460 256 470 C274 460 436 332 436 240 C436 140 356 60 256 60 Z" fill="#EA580C"/>
+  
+  <!-- Triangle Connecting Bars -->
+  <line x1="255.5" y1="175.8" x2="200.8" y2="289.9" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <line x1="255.5" y1="175.8" x2="310.0" y2="289.9" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <line x1="200.8" y1="289.9" x2="310.0" y2="289.9" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  
+  <!-- 3 Triangle Nodes (Circles) -->
+  <circle cx="255.5" cy="175.8" r="22" fill="#FFFFFF"/>
+  <circle cx="200.8" cy="289.9" r="22" fill="#FFFFFF"/>
+  <circle cx="310.0" cy="289.9" r="22" fill="#FFFFFF"/>
+</svg>

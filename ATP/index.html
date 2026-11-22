@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinode — Zero-Cloud, Offline-First Emergency Coordination</title>
+  <meta name="description" content="Trinode provides zero-cloud, offline-first emergency coordination for total blackout zones. Deploy resilient local Wi-Fi mesh networks for disaster agencies, first responders, and affected communities.">
+  <meta name="keywords" content="Trinode, offline-first, disaster response, blackout communication, emergency coordination, local mesh, zero-cloud, DMC Sri Lanka, Red Cross">
+  <meta name="author" content="Trinode Disaster Systems">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trinode.lan/">
+  <meta property="og:title" content="Trinode — Zero-Cloud, Offline-First Emergency Coordination">
+  <meta property="og:description" content="Zero-cloud, offline-first emergency coordination for total blackout zones. Designed for disaster response agencies, first responders, and affected civilians.">
+  <meta property="og:image" content="assets/wireframes/sheet-m1.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trinode — Zero-Cloud Emergency Coordination">
+  <meta name="twitter:description" content="Offline-first emergency communication and triage for total blackout disaster zones.">
+  <meta name="twitter:image" content="assets/wireframes/sheet-m1.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/illustrations/trinode-logo.svg">
+
+  <!-- Google Fonts (Space Grotesk & Inter) - Cynocor Style Reference -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Screen reader skip link for accessibility (WCAG AA) -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Interactive Sonar Mouse Cursor Follower (Matching Reference Video) -->
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true">
+    <div class="cursor-center-dot"></div>
+    <div class="cursor-sonar-ring ring-1"></div>
+    <div class="cursor-sonar-ring ring-2"></div>
+  </div>
+
+  <!-- Ambient Background Canvas / Tactical Disaster Aura -->
+  <div class="mesh-bg-canvas" aria-hidden="true"></div>
+
+  <!--  STICKY HEADER & GLASS NAVIGATION -->
+  <header class="header" id="top">
+    <div class="container">
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <!-- Brand Logo & Identity -->
+        <a href="#hero" class="brand-wrap" aria-label="Trinode Home">
+          <img src="assets/illustrations/trinode-logo.png" alt="Trinode Logo" class="brand-logo-icon">
+          <span class="brand-text">TRINODE</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#roles" class="nav-link">Who It's For</a></li>
+          <li><a href="#wireframes" class="nav-link">Wireframes</a></li>
+          <li><a href="#team" class="nav-link">Meet the Team</a></li>
+          <li><a href="#demo-request" class="nav-link">Demo</a></li>
+        </ul>
+
+        <!-- Nav Right Actions -->
+        <div class="nav-actions">
+          <!-- Primary CTA Button -->
+          <a href="#demo-request" class="btn btn--teal btn--sm">
+            <span>Request Demo</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" class="mobile-nav-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="mobile-menu" aria-label="Mobile Navigation">
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#roles" class="nav-link">Who It's For</a>
+        <a href="#wireframes" class="nav-link">Wireframes &amp; Screens</a>
+        <a href="#team" class="nav-link">Meet the Team</a>
+        <a href="#demo-request" class="nav-link">Request Demo</a>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+          <a href="#demo-request" class="btn btn--primary">Request Demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- 02. HERO SECTION  -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <!-- Hero Header  -->
+        <div class="hero-banner-card reveal">
+          <div class="hero-banner-grid">
+            <!-- Left Column: Value Proposition & CTAs -->
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="hero-badge-pill">ZERO-CLOUD</span>
+                <span>OFFLINE-FIRST EMERGENCY COORDINATION</span>
+              </div>
+
+              <h1 class="hero-headline">
+                Zero-Cloud, Offline-First Emergency Coordination for Total Blackout Zones.
+              </h1>
+
+              <p class="hero-subhead">
+                When floods, landslides, and cyclones destroy cellular towers, power lines, and cloud backbones, 
+                <strong>Trinode</strong> creates an autonomous local Wi-Fi mesh. Zero app installation, zero internet dependency, 
+                and 100% field survivability for rescue agencies and affected civilians.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="#demo-request" class="btn btn--primary">
+                  <span>Request Agency Demo</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+
+                <a href="#wireframes" class="btn btn--secondary">
+                  <span>View Our Work (9 Screens)</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Trust Badges Strip -->
+              <div class="hero-meta-strip">
+                <div class="hero-meta-item">
+                  <svg class="hero-meta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Disaster Management Centre (DMC) Spec</span>
+                </div>
+                <div class="hero-meta-item">
+                  <svg class="hero-meta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Instant Browser Captive Portal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Dual Overlapping Sinhala Wireframe Phone Mockups -->
+            <div class="hero-wireframes-showcase" aria-label="Trinode Sinhala Wireframes Preview">
+              <div class="hero-phones-container">
+                <!-- Back Phone: Sinhala Wireframe 1  -->
+                <div class="hero-phone-card hero-phone--back" data-wfid="S1" role="button" tabindex="0" title="Click to inspect Sinhala Wireframe 1: Captive Portal">
+                  <div class="hero-phone-tag">
+                    <span class="phone-tag-dot"></span>
+                    <span>Captive Portal • සිංහල</span>
+                  </div>
+                  <div class="phone-device hero-phone-device">
+                    <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                    <div class="phone-status-bar">
+                      <span class="phone-status-time">09:41</span>
+                      <div class="phone-status-icons">
+                        <span class="phone-status-wifi"></span>
+                        <span class="phone-status-battery"></span>
+                      </div>
+                    </div>
+                    <div class="phone-screen hero-phone-screen">
+                      <img src="assets/wireframes/sinhala wireframe 1.jpg" alt="Trinode Sinhala Wireframe 1 - Captive Portal Language Screen" class="phone-screen-img" loading="eager">
+                    </div>
+                    <div class="phone-home-indicator"></div>
+                  </div>
+                </div>
+
+                <!-- Front Phone: Sinhala Wireframe 2 (Offline PWA & Home Screen Setup) -->
+                <div class="hero-phone-card hero-phone--front" data-wfid="S2" role="button" tabindex="0" title="Click to inspect Sinhala Wireframe 2: Offline Home Screen">
+                  <div class="hero-phone-tag">
+                    <span class="phone-tag-dot phone-tag-dot--amber"></span>
+                    <span>Offline PWA • Home Screen</span>
+                  </div>
+                  <div class="phone-device hero-phone-device">
+                    <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                    <div class="phone-status-bar">
+                      <span class="phone-status-time">09:41</span>
+                      <div class="phone-status-icons">
+                        <span class="phone-status-wifi"></span>
+                        <span class="phone-status-battery"></span>
+                      </div>
+                    </div>
+                    <div class="phone-screen hero-phone-screen">
+                      <img src="assets/wireframes/sinhala wireframe 2.jpg" alt="Trinode Sinhala Wireframe 2 - Add to Home Screen Modal" class="phone-screen-img" loading="eager">
+                    </div>
+                    <div class="phone-home-indicator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Futuristic Hero Stage  -->
+        <div class="hero-stage reveal reveal-delay-2">
+          <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+          <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--  KEY METRICS (COUNTERS) -->
+    <section class="proof-strip" aria-label="Key Performance Proofs">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-item reveal">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="0" data-decimal="false">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Cloud Dependency</div>
+            <div class="stat-sublabel">100% field survivable on local nodes</div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-number-wrap">
+              <span class="stat-suffix" style="font-size: clamp(2rem, 3vw, 2.8rem);">&lt;&nbsp;</span>
+              <span class="stat-number" data-target="3" data-decimal="false">0</span>
+              <span class="stat-suffix">s</span>
+            </div>
+            <div class="stat-label">Mesh Sync Latency</div>
+            <div class="stat-sublabel">Instant store-and-forward in range</div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="99.9" data-decimal="true">0</span>
+              <span class="stat-suffix stat-suffix--amber">%</span>
+            </div>
+            <div class="stat-label">Blackout Zone Uptime</div>
+            <div class="stat-sublabel">Battery &amp; solar powered base nodes</div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="100" data-decimal="false">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Local Code &amp; Data Ownership</div>
+            <div class="stat-sublabel">Open standard, zero proprietary vendor lock</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCROLLING MARQUEE STRIP  -->
+    <div class="marquee-container" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="marquee-dot"></span> WEBSOCKET LIVE STATUS</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> INSTALLABLE PWA</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> NO INTERNET</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> TRILINGUAL: SINHALA · TAMIL · ENGLISH</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> UUID DUPLICATE PREVENTION</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> NO ACCOUNTS, NO PASSWORDS</div>
+
+        <div class="marquee-item"><span class="marquee-dot"></span> WEBSOCKET LIVE STATUS</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> INSTALLABLE PWA</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> NO INTERNET</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> TRILINGUAL: SINHALA · TAMIL · ENGLISH</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> UUID DUPLICATE PREVENTION</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> NO ACCOUNTS, NO PASSWORDS</div>
+
+        <!-- Duplicated for seamless infinite ticker -->
+        <div class="marquee-item"><span class="marquee-dot"></span> WEBSOCKET LIVE STATUS</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> INSTALLABLE PWA</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> NO INTERNET</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> TRILINGUAL: SINHALA · TAMIL · ENGLISH</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> UUID DUPLICATE PREVENTION</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> NO ACCOUNTS, NO PASSWORDS</div>
+
+        <div class="marquee-item"><span class="marquee-dot"></span> WEBSOCKET LIVE STATUS</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> INSTALLABLE PWA</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> NO INTERNET</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> TRILINGUAL: SINHALA · TAMIL · ENGLISH</div>
+        <div class="marquee-item"><span class="marquee-dot"></span> UUID DUPLICATE PREVENTION</div>
+        <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> NO ACCOUNTS, NO PASSWORDS</div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header-wrap reveal">
+          <div class="section-header--left">
+            <div class="section-tag-pill">HOW IT WORKS</div>
+            <h2 class="section-title">From distress call to rescue in five steps.</h2>
+            <p class="section-subtitle">
+              How Trinode connects victims, camp coordinators, and rescue boats during complete power and cellular blackouts — with zero internet.
+            </p>
+          </div>
+          <div class="section-watermark" aria-hidden="true">01</div>
+        </div>
+
+        <div class="steps-5-grid">
+          <!-- Step 1 -->
+          <article class="step-card-v2 reveal">
+            <div class="step-badge-num">1</div>
+            <h4>Connect to Base</h4>
+            <p>Connect smartphone to open <code>Trinode-Emergency</code> Wi-Fi. Captive portal opens in browser. Zero app install, SIM card, or data plan required.</p>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="step-card-v2 reveal reveal-delay-1">
+            <div class="step-badge-num">2</div>
+            <h4>Submit Request</h4>
+            <p>Select needed aid (Rescue, Medical, Food, Water, Shelter), tap urgency, and attach landmarks or offline GPS coordinates in seconds.</p>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="step-card-v2 reveal reveal-delay-2">
+            <div class="step-badge-num">3</div>
+            <h4>Store &amp; Forward</h4>
+            <p>Far from base? Request queues safely in phone IndexedDB outbox. Sends automatically the moment anyone walks within Wi-Fi range.</p>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="step-card-v2 reveal reveal-delay-3">
+            <div class="step-badge-num">4</div>
+            <h4>Coordinator Triage</h4>
+            <p>Incident commanders view live incoming tickets on laptop dashboard, detect duplicates, and assign available boat or foot squads.</p>
+          </article>
+
+          <!-- Step 5 -->
+          <article class="step-card-v2 reveal reveal-delay-4">
+            <div class="step-badge-num">5</div>
+            <h4>Verified Rescue</h4>
+            <p>Field teams navigate to coordinates, mark tasks complete, and update safe shelter capacity automatically across the network.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES & ARCHITECTURE  -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header-wrap reveal">
+          <div class="section-header--left">
+            <div class="section-tag-pill">THE FEATURES</div>
+            <h2 class="section-title">Engineered for total blackout resilience.</h2>
+            <p class="section-subtitle">
+              Six foundational pillars guaranteeing zero data loss and life-saving coordination when cloud backbones collapse.
+            </p>
+          </div>
+          <div class="section-watermark" aria-hidden="true">02</div>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Card 1 -->
+          <article class="glass-panel glass-panel--interactive feature-card reveal">
+            <h3>Emergency Help Reporting</h3>
+            <p>Submit rescue, medical, water, and shelter requests with urgency indicators, headcount, and specific landmarks in a few taps.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Medical</span>
+              <span class="feature-tag">Rescue</span>
+              <span class="feature-tag">Shelter</span>
+              <span class="feature-tag">Water</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-1">
+            <h3>Offline-First Technology</h3>
+            <p>Built with IndexedDB client-side persistence and Service Workers. Requests are saved safely on the phone even with zero wireless connectivity.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">IndexedDB</span>
+              <span class="feature-tag">PWA</span>
+              <span class="feature-tag">Zero Data Loss</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-2">
+            <h3>Real-Time Request Tracking</h3>
+            <p>Victims receive psychological certainty through a clear status journey: Queued on phone → Sent to base → Acknowledged → Dispatched → Resolved.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Audit Trail</span>
+              <span class="feature-tag">Status Stepper</span>
+              <span class="feature-tag">Transparency</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="glass-panel glass-panel--interactive feature-card reveal">
+            <h3>Rescue Team Management</h3>
+            <p>Assign specific relief missions to volunteers. Teams mark completed tasks with single-tap field feedback ("Was everyone helped?").</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Task Queues</span>
+              <span class="feature-tag">Field Teams</span>
+              <span class="feature-tag">DMC Dispatch</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-1">
+            <h3>Safe Zones &amp; Shelter Directory</h3>
+            <p>Civilians and responders see live capacity bars (e.g. 54 / 120 people) and key facility indicators (Power, Potable Water, Medical staff).</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Capacity Bars</span>
+              <span class="feature-tag">Amenity Badges</span>
+              <span class="feature-tag">Anti-Crowding</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-2">
+            <h3>Store-and-Forward Mesh</h3>
+            <p>Responders traveling between remote camps and the incident base automatically synchronize queues as soon as their devices pass within range.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Delay Tolerant</span>
+              <span class="feature-tag">Mule Sync</span>
+              <span class="feature-tag">Auto Reconciliation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="section" id="roles">
+      <div class="container">
+        <div class="section-header-wrap reveal">
+          <div class="section-header--left">
+            <div class="section-tag-pill">WHO IT'S FOR</div>
+            <h2 class="section-title">Four roles, one unified emergency network.</h2>
+            <p class="section-subtitle">
+              Tailored interfaces built for every person in the disaster perimeter, from panicked civilians to frontline rescue boat captains.
+            </p>
+          </div>
+          <div class="section-watermark" aria-hidden="true">03</div>
+        </div>
+
+        <div class="roles-grid">
+          <!-- Role 1: Resident -->
+          <article class="role-card-v2 reveal">
+            <div class="role-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h4>Resident / Civilian</h4>
+            <p>Submit emergency rescue, medical, food, or water requests in seconds. Track request progress live and view available safe shelters without any account or password.</p>
+            <span class="role-tag-bottom">Screens A1–A2 · R1–R13</span>
+          </article>
+
+          <!-- Role 2: Volunteer -->
+          <article class="role-card-v2 reveal reveal-delay-1">
+            <div class="role-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h4>Community Volunteer</h4>
+            <p>Enter name once. Receive safe, community-focused tasks like water distribution and elder checks. Report on behalf of neighbors with safe-task validation guardrails.</p>
+            <span class="role-tag-bottom">Screens V1–V5</span>
+          </article>
+
+          <!-- Role 3: Rescue Team -->
+          <article class="role-card-v2 reveal reveal-delay-2">
+            <div class="role-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+              </svg>
+            </div>
+            <h4>Rescue &amp; Boat Flotilla</h4>
+            <p>Navy, Red Cross, and volunteer flotillas sign in with secure PIN. Receive prioritized mission coordinates, navigate to landmarks, and log rescued civilians to shelters.</p>
+            <span class="role-tag-bottom">Screens T1–T4</span>
+          </article>
+
+          <!-- Role 4: Coordinator -->
+          <article class="role-card-v2 reveal reveal-delay-3">
+            <div class="role-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h4>Camp Coordinator</h4>
+            <p>Incident commanders operate live triage boards on laptop or mobile. Filter duplicate requests, dispatch teams, manage shelter space, and export CSV audit logs.</p>
+            <span class="role-tag-bottom">Screens D1–D11 · C1</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--  WIREFRAME SHOWCASE & INTERACTIVE INSPECTOR  -->
+    <section class="section wireframe-showcase" id="wireframes">
+      <div class="container">
+        <div class="section-header-wrap reveal">
+          <div class="section-header--left">
+            <div class="section-tag-pill">MOBILE &amp; DESKTOP PROTOTYPES</div>
+            <h2 class="section-title">The complete 9-screen production flow.</h2>
+            <p class="section-subtitle">
+              Explore every screen built for high-stress disaster response. Hover or click any phone mockup to inspect UX annotations, error recovery logic, and field specifications.
+            </p>
+          </div>
+          <div class="section-watermark" aria-hidden="true">04</div>
+        </div>
+
+        <!-- Filter Tabs (Dark Theme Styled) -->
+        <div class="wireframe-filter-bar reveal">
+          <button type="button" class="filter-btn active" data-filter="resident">Resident Flow (M1–M4)</button>
+          <button type="button" class="filter-btn" data-filter="volunteer">Volunteer Flow (M5–M7)</button>
+          <button type="button" class="filter-btn" data-filter="coordinator">Coordinator Suite (M8–M9)</button>
+        </div>
+
+        <!-- 9 Wireframe Phone Cards Showcase  -->
+        <div class="phone-showcase-grid wireframe-grid">
+          <!-- Screen M1 -->
+          <article class="phone-showcase-card wf-card reveal" data-category="resident" data-wfid="M1">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m1-choose-role.png" alt="M1 Start screen wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M1</span>
+                <span class="phone-cat-pill">Resident Flow</span>
+              </div>
+              <h4 class="phone-card-title">Role &amp; Base Sync</h4>
+              <p class="phone-card-desc">Prominent "Connected to base" status with immediate role selection (Resident, Volunteer, Coordinator).</p>
+            </div>
+          </article>
+
+          <!-- Screen M2 -->
+          <article class="phone-showcase-card wf-card reveal reveal-delay-1" data-category="resident" data-wfid="M2">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m2-new-request.png" alt="M2 New Request form wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M2</span>
+                <span class="phone-cat-pill">Emergency Form</span>
+              </div>
+              <h4 class="phone-card-title">Emergency Help Request</h4>
+              <p class="phone-card-desc">Tap-friendly triage categories (Medical, Shelter, Water, Food, Rescue) with urgency levels and landmarks.</p>
+            </div>
+          </article>
+
+          <!-- Screen M3 -->
+          <article class="phone-showcase-card wf-card reveal reveal-delay-2" data-category="resident" data-wfid="M3">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m3-request-errors.png" alt="M3 Error prevention wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M3</span>
+                <span class="phone-cat-pill">Error Resilience</span>
+              </div>
+              <h4 class="phone-card-title">Offline Validation &amp; Errors</h4>
+              <p class="phone-card-desc">Reassuring UX banner keeping all entered data intact without loss during severe signal dropouts.</p>
+            </div>
+          </article>
+
+          <!-- Screen M4 -->
+          <article class="phone-showcase-card wf-card reveal" data-category="resident" data-wfid="M4">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m4-request-saved.png" alt="M4 Request saved offline wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M4</span>
+                <span class="phone-cat-pill">Confirmation</span>
+              </div>
+              <h4 class="phone-card-title">Request Saved Offline</h4>
+              <p class="phone-card-desc">Clear reassurance that ticket <code>LF-7F3A</code> is queued locally and will transmit automatically upon reconnect.</p>
+            </div>
+          </article>
+
+          <!-- Screen M5 -->
+          <article class="phone-showcase-card wf-card reveal reveal-delay-1" data-category="volunteer" data-wfid="M5">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m5-my-requests.png" alt="M5 My requests list wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M5</span>
+                <span class="phone-cat-pill">Sync Tracker</span>
+              </div>
+              <h4 class="phone-card-title">My Requests &amp; Local Queue</h4>
+              <p class="phone-card-desc">Tracks all requests made on device: 2 waiting to send, dispatched rescue units, and resolved medical tickets.</p>
+            </div>
+          </article>
+
+          <!-- Screen M6 -->
+          <article class="phone-showcase-card wf-card reveal reveal-delay-2" data-category="volunteer" data-wfid="M6">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m6-request-progress.png" alt="M6 Request progress stepper wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M6</span>
+                <span class="phone-cat-pill">Lifecycle Stepper</span>
+              </div>
+              <h4 class="phone-card-title">Request Progress Stepper</h4>
+              <p class="phone-card-desc">Full status timeline: Queued → Sent → Acknowledged by Coordinator → Dispatched (Team B) → Resolved.</p>
+            </div>
+          </article>
+
+          <!-- Screen M7 -->
+          <article class="phone-showcase-card wf-card reveal" data-category="volunteer" data-wfid="M7">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m7-volunteer-tasks.png" alt="M7 Volunteer tasks wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M7</span>
+                <span class="phone-cat-pill">Volunteer Tasks</span>
+              </div>
+              <h4 class="phone-card-title">Volunteer Task Management</h4>
+              <p class="phone-card-desc">Red-highlighted urgent missions: Rescue 4 people, water rising. One-tap "Mark as done" verification sheet.</p>
+            </div>
+          </article>
+
+          <!-- Screen M8 -->
+          <article class="phone-showcase-card wf-card reveal reveal-delay-1" data-category="coordinator" data-wfid="M8">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m8-safe-zones.png" alt="M8 Safe zones and shelters wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M8</span>
+                <span class="phone-cat-pill">Shelters Directory</span>
+              </div>
+              <h4 class="phone-card-title">Safe Zones &amp; Shelters</h4>
+              <p class="phone-card-desc">Sorted by available space: Temple hall (66 spaces), Gampola MV (20 spaces). Live power/water/medical tags.</p>
+            </div>
+          </article>
+
+          <!-- Screen M9 -->
+          <article class="phone-showcase-card wf-card reveal reveal-delay-2" data-category="coordinator" data-wfid="M9">
+            <div class="phone-frame-wrapper">
+              <div class="phone-device">
+                <div class="phone-island-pill"><span class="phone-camera-lens"></span></div>
+                <div class="phone-status-bar">
+                  <span class="phone-status-time">09:41</span>
+                  <div class="phone-status-icons">
+                    <span class="phone-status-wifi"></span>
+                    <span class="phone-status-battery"></span>
+                  </div>
+                </div>
+                <div class="phone-screen">
+                  <img src="assets/wireframes/m9-coordinator-triage.png" alt="M9 Coordinator triage board wireframe" loading="lazy" class="phone-screen-img">
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <div class="phone-meta-badge-row">
+                <span class="phone-wfid-pill">M9</span>
+                <span class="phone-cat-pill">Command Triage</span>
+              </div>
+              <h4 class="phone-card-title">Coordinator Mobile Triage</h4>
+              <p class="phone-card-desc">Live ticket board: 12 Live, 7 Open, 3 Acknowledged, 4 Dispatched. Urgent sorting &amp; duplicate detection.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!--  MEET THE TEAM  -->
+
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-header-wrap reveal">
+          <div class="section-header--left">
+            <div class="section-tag-pill">MEET THE TEAM</div>
+            <h2 class="section-title">Built by students, for real-world impact.</h2>
+            <p class="section-subtitle">
+              We are Computer Science undergraduates at Informatics Institute of Technology, affiliated with the University of Westminster — united by a mission to save lives when infrastructure fails.
+            </p>
+          </div>
+          <div class="section-watermark" aria-hidden="true">05</div>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Member 1: Mulani -->
+          <article class="team-card reveal reveal-delay-1">
+            <div class="team-avatar-wrap">
+              <img src="assets/team/Mulani.jpeg" alt="Mulani" loading="lazy">
+            </div>
+            <h4>Mulani Methara</h4>
+            <span class="team-role">Frontend Developer</span>
+            <div class="team-social">
+              <a href="https://www.linkedin.com/in/mulani-methara-92b926390/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:mulani.20250389@iit.ac.lk" aria-label="Email" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com/mulanimethara2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 2: Himansha -->
+          <article class="team-card reveal reveal-delay-2">
+            <div class="team-avatar-wrap">
+              <img src="assets/team/Himansha.jpeg" alt="Himansha Dias" loading="lazy">
+            </div>
+            <h4>Himansha Dias</h4>
+            <span class="team-role">Full Stack Developer</span>
+            <div class="team-social">
+              <a href="https://www.linkedin.com/in/himansha-dias/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:himansha.20250413@iit.ac.lk" aria-label="Email" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com/himawk4" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 3: Sesadi Hewamadduma-->
+          <article class="team-card reveal reveal-delay-3">
+            <div class="team-avatar-wrap">
+              <img src="assets/team/Sesadi.jpeg" alt="Himansha Dias" loading="lazy">
+            </div>
+            <h4>Sesadi Hewamadduma</h4>
+            <span class="team-role"> UI/UX Designer </span>
+            <div class="team-social">
+              <a href="https://www.linkedin.com/in/sesadi-hewamadduma/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:sesadi.20250192@iit.ac.lk" aria-label="Email" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com/sesadihewamadduma" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 4: Chanka-->
+          <article class="team-card reveal reveal-delay-4">
+            <div class="team-avatar-wrap">
+              <img src="assets/team/Chanka.jpeg" alt="Himansha Dias" loading="lazy">
+            </div>
+            <h4>Chanka Nethmi</h4>
+            <span class="team-role"> Backend Developer </span>
+            <div class="team-social">
+              <a href="https://www.linkedin.com/in/chanka-bandaranayake-bb4676395/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto :chanka.20250400@iit.ac.lk" aria-label="Email" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com/chanka400" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 5: Dithira -->
+          <article class="team-card reveal reveal-delay-5">
+            <div class="team-avatar-wrap" style="display: flex; align-items: center; justify-content: center; background: #E2E8F0; color: var(--text-primary); font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700;">
+              <span>DA</span>
+            </div>
+            <h4>Dithira Abhiman</h4>
+            <span class="team-role"> QA and Testing / Devops Engineer </span>
+            <div class="team-social">
+              <a href="mailto:dithira.20240482@iit.ac.lk" aria-label="Email" class="team-social-link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Academic Affiliation Badge -->
+        <div class="team-affiliation reveal" style="text-align: center; margin-top: 48px;">
+          <div style="display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-full); box-shadow: var(--shadow-sm);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Informatics Institute of Technology · University of Westminster</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT & DEMO REQUEST -->
+    <section class="section" id="demo-request">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-grid">
+            <!-- Left Info Column -->
+            <div class="cta-info">
+              <div class="section-tag-pill">PARTNER &amp; EVALUATE</div>
+              <h2>Prepare Your Region Before the Next Blackout Strikes.</h2>
+              <p>
+                Whether you lead a disaster management agency, a volunteer rescue flotilla, or an academic evaluation committee, 
+                our engineering team will conduct a tailored briefing and simulate a live blackout coordination drill with your squad.
+              </p>
+
+              <!-- Direct Contact Channels (Email, WhatsApp, Instagram) -->
+              <div class="contact-channels">
+                <a href="mailto :atpcs08@gmail.com  " class="contact-channel-item">
+                  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Official Email</strong>
+                    <span style="font-size:0.84rem; color:var(--text-muted);">atpcs08@gmail.com </span>
+                  </div>
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </a>
+
+                <div class="contact-channel-item" style="cursor: default;">
+                  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Academic Affiliation</strong>
+                    <span style="font-size:0.84rem; color:var(--text-muted);">Informatics Institute of Technology · University of Westminster</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div>
+              <form class="cta-form" id="demo-request-form" novalidate>
+                <h3>Request an Agency Demonstration</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+                  Complete this brief form to schedule an offline mesh demonstration or pilot deployment.
+                </p>
+
+                <!-- Success Banner -->
+                <div class="form-success-banner" role="status" aria-live="polite"></div>
+
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" id="form-name" class="form-control" placeholder="e.g. Captain Samantha Silva" required>
+                  <span class="form-error-msg">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-agency" class="form-label">Organization / Response Unit <span class="req">*</span></label>
+                  <input type="text" id="form-agency" class="form-control" placeholder="e.g. Sri Lanka Red Cross / Gampola Volunteer Flotilla" required>
+                  <span class="form-error-msg">Please enter your agency.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-contact" class="form-label">Official Email or WhatsApp Number <span class="req">*</span></label>
+                  <input type="text" id="form-contact" class="form-control" placeholder="e.g. s.silva@redcross.lk or +94 71 234 5678" required>
+                  <span class="form-error-msg">Please enter a valid contact method.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-region" class="form-label">Target Region / District</label>
+                  <input type="text" id="form-region" class="form-control" placeholder="e.g. Kandy, Ratnapura, Gampaha, Badulla">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-scale" class="form-label">Estimated Pilot Scale</label>
+                  <select id="form-scale" class="form-control">
+                    <option value="Single Relief Camp (1-2 Nodes)">Single Relief Camp (1–2 Nodes)</option>
+                    <option value="Divisional Secretariate (5-10 Nodes)">Divisional Secretariat (5–10 Nodes)</option>
+                    <option value="District / National Flood Basin (25+ Nodes)">District / National Flood Basin (25+ Nodes)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-notes" class="form-label">Specific Blackout Concerns or Inquiries</label>
+                  <textarea id="form-notes" class="form-control" rows="3" placeholder="Tell us about terrain, typical flood durations, or power reliability in your zone..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--teal" style="width: 100%; margin-top: 8px;">
+                  <span>Submit Demo Request</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col footer-col--brand">
+          <a href="#hero" class="brand-wrap footer-brand-title" aria-label="Trinode Home">
+            <img src="assets/illustrations/trinode-logo.png" alt="Trinode Logo" class="brand-logo-icon">
+            <span class="brand-text">Trinode</span>
+          </a>
+          <p class="footer-col-desc">
+            Built by ATP Group CS-08 in collaboration with DMC Sri Lanka &amp; Red Cross.
+          </p>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="footer-col">
+          <span class="footer-col-heading">Contact</span>
+          <a href="mailto:atpcs08@gmail.com" class="footer-link footer-email">atpcs08@gmail.com</a>
+          <span class="footer-col-sub">Informatics Institute of Technology, Sri Lanka</span>
+        </div>
+
+        <!-- Social Column -->
+        <div class="footer-col">
+          <span class="footer-col-heading">Social</span>
+          <div class="footer-inline-links">
+            <a href="https://www.instagram.com/trinode_official/ target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+            <span class="footer-sep">|</span>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-link">Facebook</a>
+            <span class="footer-sep">|</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Legal Column -->
+        <div class="footer-col">
+          <span class="footer-col-heading">Legal</span>
+          <a href="#privacy" class="footer-link" id="footer-privacy-btn">Privacy Notice</a>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Line -->
+      <div class="footer-copyright">
+        <p>© 2026 Trinode. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  WIREFRAME MODAL LIGHTBOX / INSPECTOR -->
+  <div class="modal-backdrop" id="wf-modal" role="dialog" aria-modal="true" aria-labelledby="modal-wf-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" aria-label="Close modal window">✕</button>
+      
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 16px;">
+        <span class="wf-id-badge" id="modal-wf-badge">M1</span>
+        <h3 id="modal-wf-title" style="font-size: 1.6rem; color: var(--text-white);">Wireframe Title</h3>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start;">
+        <div style="background: #000; border: 1px solid var(--border-glass-bright); border-radius: var(--radius-md); overflow: hidden; max-height: 520px; display: flex; justify-content: center;">
+          <img id="modal-wf-img" src="" alt="Wireframe full preview" style="max-height: 520px; width: auto; object-fit: contain;">
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div>
+            <h4 style="font-size: 1.05rem; color: var(--teal-300); margin-bottom: 4px;">Functional Overview</h4>
+            <p id="modal-wf-desc" style="font-size: 0.95rem; color: var(--text-light); line-height: 1.6;"></p>
+          </div>
+
+          <div style="background: rgba(20, 184, 166, 0.08); border: 1px solid var(--teal-border); border-radius: var(--radius-sm); padding: 16px;">
+            <h4 style="font-size: 0.92rem; color: var(--teal-300); margin-bottom: 6px; font-family: var(--font-mono); text-transform: uppercase;">
+              Field UX &amp; Resiliency Rationale
+            </h4>
+            <p id="modal-wf-notes" style="font-size: 0.88rem; color: var(--text-light); line-height: 1.55;"></p>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; margin-top: 8px;">
+            <button type="button" class="btn btn--secondary btn--sm" onclick="document.getElementById('wf-modal').classList.remove('open'); document.body.style.overflow = '';">
+              Close Inspector
+            </button>
+          </div>
+          <div class="map">
+	
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
