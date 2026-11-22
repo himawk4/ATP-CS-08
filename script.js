@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  /* STICKY HEADER & SCROLL BEHAVIOR  */
+  // header shadow on scroll + active nav link
   
   const header = document.querySelector('.header');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('scrolled');
     }
 
-    // ScrollSpy: highlight active link
+    // highlight the nav link for the section in view
     let currentId = '';
     const scrollPos = window.scrollY + 140;
 
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { passive: true });
 
-  /* MOBILE NAVIGATION MENU */
+  // mobile menu
   const navToggle = document.querySelector('.mobile-nav-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -64,13 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Ensure standard light topographic mesh background is active
+  // clear old theme setting from earlier version
   if (localStorage.getItem('trinode-map-theme')) {
     localStorage.removeItem('trinode-map-theme');
   }
   document.body.removeAttribute('data-theme');
 
-  /* SCROLL REVEAL */
+  // fade in sections on scroll
   
   const revealElements = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('active'));
   }
 
-  /*  ANIMATED COUNTERS FOR  */
+  // count up numbers
   const statNumbers = document.querySelectorAll('.stat-number');
   let statsCounted = false;
 
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function update(currentTime) {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease out cubic
+      // ease out
       const ease = 1 - Math.pow(1 - progress, 3);
       const currentVal = target * ease;
 
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* WIREFRAME FILTER TABS */
+  // wireframe filter tabs
   const filterBtns = document.querySelectorAll('.filter-btn');
   const wfCards = document.querySelectorAll('.wf-card');
 
@@ -176,13 +176,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Trigger the default active filter on load
+  // show resident screens first
   const defaultFilter = document.querySelector('.filter-btn.active');
   if (defaultFilter) {
     defaultFilter.click();
   }
 
-  /*  WIREFRAME MODAL INSPECTOR */
+  // wireframe popup
   const modalBackdrop = document.getElementById('wf-modal');
   const modalImage = document.getElementById('modal-wf-img');
   const modalTitle = document.getElementById('modal-wf-title');
@@ -193,81 +193,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const wireframeDetails = {
     'M1': {
-      title: 'M1: Start — Choose Role Screen',
+      title: 'M1: Choose Role',
       badge: 'Resident / First Screen',
       image: 'assets/wireframes/m1-choose-role.png',
-      desc: 'First screen loaded when any phone connects to trinode.lan hotspot. Provides immediate connection confirmation and zero-friction role selection.',
-      notes: 'Connection First: The prominent "Connected to base" status banner tells distressed citizens immediately that their phone reached emergency camp Wi-Fi. Zero account registration required for residents to maximize reporting speed.'
+      desc: 'First screen when a phone connects to the trinode.lan hotspot. Shows that the phone is connected and asks the user to choose a role.',
+      notes: 'We put the "Connected to base" banner at the top so people know straight away that their phone is on the camp Wi-Fi. Residents do not need an account so they can report quickly.'
     },
     'M2': {
-      title: 'M2: New Help Request Form',
+      title: 'M2: New Help Request',
       badge: 'Resident & Volunteer Reporting',
       image: 'assets/wireframes/m2-new-request.png',
-      desc: 'Intuitive triage intake for urgent needs: Medical, Water, Food, Shelter, Rescue, or Other.',
-      notes: 'Form captures urgency (Urgent, Moderate, Low), precise landmarks (e.g., Behind Gampola temple, 2nd lane), and number of affected people with large, stress-tolerant tap targets.'
+      desc: 'Form for asking for help: Medical, Water, Food, Shelter, Rescue or Other.',
+      notes: 'Asks for urgency (Urgent, Moderate, Low), a landmark (e.g. behind Gampola temple, 2nd lane) and the number of people. Buttons are large so they are easy to tap.'
     },
     'M3': {
-      title: 'M3: Offline Error & Validation State',
-      badge: 'Resilience & Data Safety',
+      title: 'M3: Form Errors',
+      badge: 'Validation',
       image: 'assets/wireframes/m3-request-errors.png',
-      desc: 'Displays clear non-blocking validation while assuring the user: "Your answers are kept — nothing has been lost".',
-      notes: 'Critical UX safeguard: Even during complete network signal loss, the browser stores input locally so victims never lose typed triage details.'
+      desc: 'Shows which fields need fixing and tells the user "Your answers are kept, nothing has been lost".',
+      notes: 'Input is saved in the browser, so if the connection drops the user does not have to type everything again.'
     },
     'M4': {
-      title: 'M4: Request Saved Offline Confirmation',
-      badge: 'Store-and-Forward Confirmation',
+      title: 'M4: Request Saved',
+      badge: 'Confirmation',
       image: 'assets/wireframes/m4-request-saved.png',
-      desc: 'Shows confirmation that the emergency ticket (e.g. LF-7F3A) is safely queued on phone storage and will sync automatically upon Wi-Fi proximity.',
-      notes: 'Provides psychological reassurance in panic situations. Assigns local ticket reference ID and tells user to keep the phone powered.'
+      desc: 'Confirms the request (e.g. LF-7F3A) is saved on the phone and will be sent when it is back in Wi-Fi range.',
+      notes: 'Gives the user a reference ID and reminds them to keep the phone switched on.'
     },
     'M5': {
-      title: 'M5: My Requests & Local Sync Queue',
-      badge: 'Resident & Volunteer Tracking',
+      title: 'M5: My Requests',
+      badge: 'Tracking',
       image: 'assets/wireframes/m5-my-requests.png',
-      desc: 'Real-time overview of all tickets submitted from this device, their sync queue status, and live field dispatch state.',
-      notes: 'Status chips include QUEUED (waiting for relay), SENT (received by base camp node), DISPATCHED (rescue boat en route), and RESOLVED.'
+      desc: 'List of requests sent from this phone and the status of each one.',
+      notes: 'Statuses: QUEUED (not sent yet), SENT (reached the base), DISPATCHED (team on the way) and RESOLVED.'
     },
     'M6': {
-      title: 'M6: Request Detail & Progress Stepper',
-      badge: 'Full Lifecycle Journey',
+      title: 'M6: Request Progress',
+      badge: 'Request Status',
       image: 'assets/wireframes/m6-request-progress.png',
-      desc: 'End-to-end timeline for ticket LF-2C91: Queued on phone → Sent to base → Acknowledged by Coordinator → Dispatched → Resolved.',
-      notes: 'Eliminates anxiety by giving civilians full transparency into which rescue team (e.g. Team B boat) has been assigned to their exact coordinates.'
+      desc: 'Timeline for request LF-2C91: Queued → Sent → Acknowledged → Dispatched → Resolved.',
+      notes: 'Shows which team (e.g. Team B) has been assigned so the person knows help is coming.'
     },
     'M7': {
-      title: 'M7: Volunteer Task Management',
-      badge: 'First Responder Workflow',
+      title: 'M7: Volunteer Tasks',
+      badge: 'Volunteer',
       image: 'assets/wireframes/m7-volunteer-tasks.png',
-      desc: 'Task dispatch board for volunteer rescue teams, highlighting high-urgency rescue missions at the top with quick "Mark as done" verification.',
-      notes: 'Features a confirmation sheet asking "Was everyone helped?" with Yes / Not fully options. "Not fully" keeps the task open and alerts the base coordinator.'
+      desc: 'Task list for volunteers with urgent tasks at the top and a "Mark as done" button.',
+      notes: 'After marking done, it asks "Was everyone helped?" (Yes / Not fully). "Not fully" keeps the task open and lets the coordinator know.'
     },
     'M8': {
-      title: 'M8: Safe Zones & Shelters Directory',
-      badge: 'Civilian & Field Logistics',
+      title: 'M8: Safe Zones & Shelters',
+      badge: 'Shelters',
       image: 'assets/wireframes/m8-safe-zones.png',
-      desc: 'Real-time shelter capacity and essential amenity tracker (Power, Potable Water, Medical Staff) sorted by available space.',
-      notes: 'Prevents overcrowded relief camps by guiding displaced families to shelters with capacity (e.g. Temple hall: 66 spaces available).'
+      desc: 'Shelters sorted by free space, with tags for power, drinking water and medical staff.',
+      notes: 'Helps send families to shelters that still have space (e.g. Temple hall: 66 spaces) so one camp does not get overcrowded.'
     },
     'M9': {
-      title: 'M9: Coordinator Triage Command Board',
-      badge: 'Command & Incident Triage',
+      title: 'M9: Coordinator Triage',
+      badge: 'Coordinator',
       image: 'assets/wireframes/m9-coordinator-triage.png',
-      desc: 'Compact mobile triage console for incident commanders: Live ticket counts, urgent filtering, duplicate detection, and team dispatch.',
-      notes: 'Transforms complex desktop dispatch boards into high-speed mobile cards for commanders working on battery power in muddy field tents.'
+      desc: 'Mobile version of the triage board: request counts, urgent filter, duplicate detection and assigning teams.',
+      notes: 'A simpler card layout of the desktop dashboard, for coordinators who only have a phone with them.'
     },
     'S1': {
-      title: 'Sinhala Wireframe 1: Captive Portal & Language Screen',
-      badge: 'Civilians & Displaced Residents',
+      title: 'Sinhala Wireframe 1: Language Screen',
+      badge: 'Resident',
       image: 'assets/wireframes/sinhala wireframe 1.jpg',
-      desc: 'Automatic captive portal splash screen displayed when connecting to the local Trinode hotspot in Gampola relief camp. Features multi-language selection (සිංහල, தமிழ், English) and guidance on opening Trinode in browser for offline persistence.',
-      notes: 'Zero App Installation: The captive portal automatically triggers the native browser. Civilians choose their preferred language (Sinhala, Tamil, or English) without downloading anything from an app store.'
+      desc: 'Screen shown when connecting to the Trinode hotspot at the Gampola relief camp. The user picks a language (සිංහල, தமிழ், English) and is told how to open Trinode in the browser.',
+      notes: 'The captive portal opens the browser automatically, so nothing has to be downloaded from an app store.'
     },
     'S2': {
       title: 'Sinhala Wireframe 2: Offline Home Screen Setup',
-      badge: 'Offline PWA & Local Base Connection',
+      badge: 'PWA Setup',
       image: 'assets/wireframes/sinhala wireframe 2.jpg',
-      desc: 'Modal prompt guiding users to add Trinode to their phone home screen. Confirms connection to the local base (Trinode.lan · Gampola relief camp) and role selection (I need help / I am a volunteer / Team or staff sign in).',
-      notes: 'PWA Survivability: Once added to home screen, requests wait securely on the device and sync automatically as soon as the user is in range of any Trinode Wi-Fi base node.'
+      desc: 'Popup asking the user to add Trinode to their home screen. Shows the base they are connected to (Trinode.lan, Gampola relief camp) and the role options.',
+      notes: 'Once it is on the home screen, requests are saved on the phone and sent when it is in range of a Trinode base.'
     }
   };
 
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  /*  DEMO REQUEST FORM VALIDATION & ACTIONS */
+  // contact form
   const demoForm = document.getElementById('demo-request-form');
   const successBanner = document.querySelector('.form-success-banner');
 
@@ -359,23 +359,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const scale = encodeURIComponent(scaleInput ? scaleInput.value : 'Community / District');
         const notes = encodeURIComponent(notesInput ? notesInput.value.trim() : 'Requesting Trinode offline mesh briefing and demonstration.');
 
-        // Build pre-filled mailto & WhatsApp links
-        const mailSubject = encodeURIComponent(`[Trinode Demo Request] ${agencyInput.value.trim()}`);
+        // build email + whatsapp links
+        const mailSubject = encodeURIComponent(`Trinode enquiry - ${agencyInput.value.trim()}`);
         const mailBody = encodeURIComponent(
-          `Hello Trinode Disaster Response Team,\n\n` +
-          `I would like to request an official demonstration and deployment briefing for Trinode.\n\n` +
-          `• Organization / Agency: ${agencyInput.value.trim()}\n` +
-          `• Contact Person: ${nameInput.value.trim()}\n` +
+          `Hi Trinode team,\n\n` +
+          `I'd like to know more about Trinode.\n\n` +
+          `• Organisation: ${agencyInput.value.trim()}\n` +
+          `• Name: ${nameInput.value.trim()}\n` +
           `• Email / Phone: ${contactInput.value.trim()}\n` +
           `• Region: ${regionInput ? regionInput.value.trim() : 'N/A'}\n` +
-          `• Deployment Scale: ${scaleInput ? scaleInput.value : 'District'}\n` +
-          `• Operational Notes: ${notesInput ? notesInput.value.trim() : 'N/A'}\n\n` +
+          `• Area size: ${scaleInput ? scaleInput.value : 'District'}\n` +
+          `• Message: ${notesInput ? notesInput.value.trim() : 'N/A'}\n\n` +
           `Thank you,\n${nameInput.value.trim()}`
         );
 
         const waText = encodeURIComponent(
-          `*Trinode Emergency Coordination Demo Request*\n` +
-          `• Agency: ${agencyInput.value.trim()}\n` +
+          `*Trinode enquiry*\n` +
+          `• Organisation: ${agencyInput.value.trim()}\n` +
           `• Contact: ${nameInput.value.trim()} (${contactInput.value.trim()})\n` +
           `• Region: ${regionInput ? regionInput.value.trim() : 'Sri Lanka'}\n` +
           `• Scale: ${scaleInput ? scaleInput.value : 'District'}`
@@ -383,17 +383,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (successBanner) {
           successBanner.innerHTML = `
-            <strong>✓ Demo Request Prepared!</strong><br>
-            Thank you, ${nameInput.value.trim()} from ${agencyInput.value.trim()}. Your demonstration inquiry has been formatted.<br><br>
+            <strong>Thanks, ${nameInput.value.trim()}!</strong><br>
+            Choose how you want to send your message:<br><br>
             <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;">
               <a href="mailto:atpcs08@gmail.com?subject=${mailSubject}&body=${mailBody}" class="btn btn--teal btn--sm" style="color:#FFFFFF; text-decoration:none;">
-                ✉ Send via Email
+                Send by Email
               </a>
               <a href="https://wa.me/94770000000?text=${waText}" target="_blank" rel="noopener noreferrer" class="btn btn--secondary-cream btn--sm" style="text-decoration:none;">
-                💬 Open in WhatsApp
+                Open in WhatsApp
               </a>
             </div>
-            <p style="font-size:0.78rem; color:#94a3b8; margin-top:8px;"> </p>
           `;
           successBanner.classList.add('visible');
         }
@@ -420,11 +419,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (privacyBtn) {
     privacyBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      alert('Trinode Privacy Notice:\n\nTrinode is designed exclusively for zero-cloud, offline emergency coordination. The platform operates on local Raspberry pi mesh networks, meaning no personal data, location traces, or messages are ever sent to commercial cloud servers or shared with third parties.');
+      alert('Privacy Notice\n\nTrinode runs on a local network (Raspberry Pi) and does not use any cloud services. Requests stay on the local server and are not shared with third parties.');
     });
   }
 
-  /* MOUSE CURSOR FOLLOW ANIMATION & SONAR RINGS  */
+  // custom cursor
   const cursorFollower = document.getElementById('cursorFollower');
   if (cursorFollower) {
     let mouseX = window.innerWidth / 2;
@@ -447,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cursorFollower.style.opacity = '0';
     });
 
-    // High performance lerp animation loop for liquid spring cursor movement
+    // smooth follow (lerp)
     function renderCursor() {
       currentX += (mouseX - currentX) * 0.16;
       currentY += (mouseY - currentY) * 0.16;
@@ -456,7 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     requestAnimationFrame(renderCursor);
 
-    // Expand cursor rings on interactive targets 
+    // bigger rings when hovering clickable things
     const interactiveSelector = [
       'a',
       'button',
@@ -490,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Touch support: show and expand cursor rings at touch position
+    // touch screens
     document.addEventListener('touchstart', (e) => {
       if (e.touches && e.touches[0]) {
         mouseX = e.touches[0].clientX;
