@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trinode — Zero-Cloud, Offline-First Emergency Coordination</title>
-  <meta name="description" content="Trinode provides zero-cloud, offline-first emergency coordination for total blackout zones. Deploy resilient local Wi-Fi mesh networks for disaster agencies, first responders, and affected communities.">
-  <meta name="keywords" content="Trinode, offline-first, disaster response, blackout communication, emergency coordination, local mesh, zero-cloud, DMC Sri Lanka, Red Cross">
-  <meta name="author" content="Trinode Disaster Systems">
+  <title>Trinode | Offline Emergency Coordination</title>
+  <meta name="description" content="Trinode is an offline-first emergency coordination app that works over a local Wi-Fi network when the internet is down. ATP group project CS-08.">
+  <meta name="keywords" content="Trinode, offline-first, disaster response, emergency coordination, PWA, Sri Lanka">
+  <meta name="author" content="ATP Group CS-08">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trinode.lan/">
-  <meta property="og:title" content="Trinode — Zero-Cloud, Offline-First Emergency Coordination">
-  <meta property="og:description" content="Zero-cloud, offline-first emergency coordination for total blackout zones. Designed for disaster response agencies, first responders, and affected civilians.">
+  <meta property="og:title" content="Trinode | Offline Emergency Coordination">
+  <meta property="og:description" content="An offline-first app for sending and tracking help requests when the internet and mobile network are down.">
   <meta property="og:image" content="assets/wireframes/sheet-m1.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Trinode — Zero-Cloud Emergency Coordination">
-  <meta name="twitter:description" content="Offline-first emergency communication and triage for total blackout disaster zones.">
+  <meta name="twitter:title" content="Trinode | Offline Emergency Coordination">
+  <meta name="twitter:description" content="An offline-first app for sending and tracking help requests when the internet is down.">
   <meta name="twitter:image" content="assets/wireframes/sheet-m1.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/illustrations/trinode-logo.svg">
 
-  <!-- Google Fonts (Space Grotesk & Inter) - Cynocor Style Reference -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -34,30 +34,29 @@
 </head>
 <body>
 
-  <!-- Screen reader skip link for accessibility (WCAG AA) -->
+  <!-- skip link for keyboard / screen reader users -->
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-  <!-- Interactive Sonar Mouse Cursor Follower (Matching Reference Video) -->
+  <!-- custom cursor -->
   <div class="cursor-follower" id="cursorFollower" aria-hidden="true">
     <div class="cursor-center-dot"></div>
     <div class="cursor-sonar-ring ring-1"></div>
     <div class="cursor-sonar-ring ring-2"></div>
   </div>
 
-  <!-- Ambient Background Canvas / Tactical Disaster Aura -->
+  <!-- background -->
   <div class="mesh-bg-canvas" aria-hidden="true"></div>
 
-  <!--  STICKY HEADER & GLASS NAVIGATION -->
+  <!-- header / nav -->
   <header class="header" id="top">
     <div class="container">
       <nav class="nav-bar" aria-label="Main Navigation">
-        <!-- Brand Logo & Identity -->
+        <!-- logo -->
         <a href="#hero" class="brand-wrap" aria-label="Trinode Home">
           <img src="assets/illustrations/trinode-logo.png" alt="Trinode Logo" class="brand-logo-icon">
           <span class="brand-text">TRINODE</span>
         </a>
 
-        <!-- Desktop Navigation Links -->
         <ul class="nav-links">
           <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
           <li><a href="#features" class="nav-link">Features</a></li>
@@ -67,9 +66,7 @@
           <li><a href="#demo-request" class="nav-link">Demo</a></li>
         </ul>
 
-        <!-- Nav Right Actions -->
         <div class="nav-actions">
-          <!-- Primary CTA Button -->
           <a href="#demo-request" class="btn btn--teal btn--sm">
             <span>Request Demo</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -78,7 +75,7 @@
             </svg>
           </a>
 
-          <!-- Mobile Hamburger Toggle -->
+          <!-- hamburger (mobile) -->
           <button type="button" class="mobile-nav-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
@@ -87,7 +84,7 @@
         </div>
       </nav>
 
-      <!-- Mobile Dropdown Menu -->
+      <!-- mobile menu -->
       <div class="mobile-menu" aria-label="Mobile Navigation">
         <a href="#how-it-works" class="nav-link">How It Works</a>
         <a href="#features" class="nav-link">Features</a>
@@ -102,35 +99,32 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main id="main-content">
 
-    <!-- 02. HERO SECTION  -->
+    <!-- hero -->
     <section class="hero-section" id="hero">
       <div class="container">
-        <!-- Hero Header  -->
         <div class="hero-banner-card reveal">
           <div class="hero-banner-grid">
-            <!-- Left Column: Value Proposition & CTAs -->
             <div class="hero-content">
               <div class="hero-badge">
-                <span class="hero-badge-pill">ZERO-CLOUD</span>
-                <span>OFFLINE-FIRST EMERGENCY COORDINATION</span>
+                <span class="hero-badge-pill">ATP CS-08</span>
+                <span>OFFLINE-FIRST EMERGENCY APP</span>
               </div>
 
               <h1 class="hero-headline">
-                Zero-Cloud, Offline-First Emergency Coordination for Total Blackout Zones.
+                Emergency coordination that still works when the internet goes down.
               </h1>
 
               <p class="hero-subhead">
-                When floods, landslides, and cyclones destroy cellular towers, power lines, and cloud backbones, 
-                <strong>Trinode</strong> creates an autonomous local Wi-Fi mesh. Zero app installation, zero internet dependency, 
-                and 100% field survivability for rescue agencies and affected civilians.
+                During floods and landslides the mobile network and power are often the first things to go.
+                <strong>Trinode</strong> runs on a local Wi-Fi network at the relief camp, so people can send help requests
+                from their phone browser and coordinators can see them, without any internet connection.
               </p>
 
               <div class="hero-cta-group">
                 <a href="#demo-request" class="btn btn--primary">
-                  <span>Request Agency Demo</span>
+                  <span>Contact Us</span>
                   <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -138,30 +132,28 @@
                 </a>
 
                 <a href="#wireframes" class="btn btn--secondary">
-                  <span>View Our Work (9 Screens)</span>
+                  <span>See the Wireframes</span>
                   <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <polygon points="5 3 19 12 5 21 5 3"></polygon>
                   </svg>
                 </a>
               </div>
 
-              <!-- Trust Badges Strip -->
               <div class="hero-meta-strip">
                 <div class="hero-meta-item">
                   <svg class="hero-meta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Disaster Management Centre (DMC) Spec</span>
+                  <span>Based on DMC requirements</span>
                 </div>
                 <div class="hero-meta-item">
                   <svg class="hero-meta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Instant Browser Captive Portal</span>
+                  <span>Opens in the browser, no install</span>
                 </div>
               </div>
             </div>
 
-            <!-- Right Column: Dual Overlapping Sinhala Wireframe Phone Mockups -->
+            <!-- hero phones (sinhala wireframes) -->
             <div class="hero-wireframes-showcase" aria-label="Trinode Sinhala Wireframes Preview">
               <div class="hero-phones-container">
-                <!-- Back Phone: Sinhala Wireframe 1  -->
                 <div class="hero-phone-card hero-phone--back" data-wfid="S1" role="button" tabindex="0" title="Click to inspect Sinhala Wireframe 1: Captive Portal">
                   <div class="hero-phone-tag">
                     <span class="phone-tag-dot"></span>
@@ -183,7 +175,6 @@
                   </div>
                 </div>
 
-                <!-- Front Phone: Sinhala Wireframe 2 (Offline PWA & Home Screen Setup) -->
                 <div class="hero-phone-card hero-phone--front" data-wfid="S2" role="button" tabindex="0" title="Click to inspect Sinhala Wireframe 2: Offline Home Screen">
                   <div class="hero-phone-tag">
                     <span class="phone-tag-dot phone-tag-dot--amber"></span>
@@ -209,7 +200,6 @@
           </div>
         </div>
 
-        <!-- Futuristic Hero Stage  -->
         <div class="hero-stage reveal reveal-delay-2">
           <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
           <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
@@ -217,55 +207,46 @@
       </div>
     </section>
 
-    <!--  KEY METRICS (COUNTERS) -->
-    <section class="proof-strip" aria-label="Key Performance Proofs">
+    <!-- numbers strip -->
+    <section class="proof-strip" aria-label="Project at a glance">
       <div class="container">
         <div class="stats-grid">
-          <!-- Stat 1 -->
           <div class="stat-item reveal">
             <div class="stat-number-wrap">
-              <span class="stat-number" data-target="0" data-decimal="false">0</span>
-              <span class="stat-suffix">%</span>
+              <span class="stat-number" data-target="4" data-decimal="false">0</span>
             </div>
-            <div class="stat-label">Cloud Dependency</div>
-            <div class="stat-sublabel">100% field survivable on local nodes</div>
+            <div class="stat-label">User Roles</div>
+            <div class="stat-sublabel">Resident, volunteer, rescue team, coordinator</div>
           </div>
 
-          <!-- Stat 2 -->
           <div class="stat-item reveal reveal-delay-1">
             <div class="stat-number-wrap">
-              <span class="stat-suffix" style="font-size: clamp(2rem, 3vw, 2.8rem);">&lt;&nbsp;</span>
-              <span class="stat-number" data-target="3" data-decimal="false">0</span>
-              <span class="stat-suffix">s</span>
+              <span class="stat-number" data-target="9" data-decimal="false">0</span>
             </div>
-            <div class="stat-label">Mesh Sync Latency</div>
-            <div class="stat-sublabel">Instant store-and-forward in range</div>
+            <div class="stat-label">Wireframe Screens</div>
+            <div class="stat-sublabel">Covering the main user flows</div>
           </div>
 
-          <!-- Stat 3 -->
           <div class="stat-item reveal reveal-delay-2">
             <div class="stat-number-wrap">
-              <span class="stat-number" data-target="99.9" data-decimal="true">0</span>
-              <span class="stat-suffix stat-suffix--amber">%</span>
+              <span class="stat-number" data-target="5" data-decimal="false">0</span>
             </div>
-            <div class="stat-label">Blackout Zone Uptime</div>
-            <div class="stat-sublabel">Battery &amp; solar powered base nodes</div>
+            <div class="stat-label">Steps to Rescue</div>
+            <div class="stat-sublabel">From sending a request to getting help</div>
           </div>
 
-          <!-- Stat 4 -->
           <div class="stat-item reveal reveal-delay-3">
             <div class="stat-number-wrap">
-              <span class="stat-number" data-target="100" data-decimal="false">0</span>
-              <span class="stat-suffix">%</span>
+              <span class="stat-number" data-target="0" data-decimal="false">0</span>
             </div>
-            <div class="stat-label">Local Code &amp; Data Ownership</div>
-            <div class="stat-sublabel">Open standard, zero proprietary vendor lock</div>
+            <div class="stat-label">Internet Needed</div>
+            <div class="stat-sublabel">Everything runs on the local network</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SCROLLING MARQUEE STRIP  -->
+    <!-- scrolling strip -->
     <div class="marquee-container" aria-hidden="true">
       <div class="marquee-track">
         <div class="marquee-item"><span class="marquee-dot"></span> WEBSOCKET LIVE STATUS</div>
@@ -282,7 +263,7 @@
         <div class="marquee-item"><span class="marquee-dot"></span> UUID DUPLICATE PREVENTION</div>
         <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> NO ACCOUNTS, NO PASSWORDS</div>
 
-        <!-- Duplicated for seamless infinite ticker -->
+        <!-- repeated so the loop looks continuous -->
         <div class="marquee-item"><span class="marquee-dot"></span> WEBSOCKET LIVE STATUS</div>
         <div class="marquee-item"><span class="marquee-dot marquee-dot--amber"></span> INSTALLABLE PWA</div>
         <div class="marquee-item"><span class="marquee-dot"></span> NO INTERNET</div>
@@ -299,15 +280,15 @@
       </div>
     </div>
 
-    <!-- HOW IT WORKS -->
+    <!-- how it works -->
     <section class="section" id="how-it-works">
       <div class="container">
         <div class="section-header-wrap reveal">
           <div class="section-header--left">
             <div class="section-tag-pill">HOW IT WORKS</div>
-            <h2 class="section-title">From distress call to rescue in five steps.</h2>
+            <h2 class="section-title">How it works</h2>
             <p class="section-subtitle">
-              How Trinode connects victims, camp coordinators, and rescue boats during complete power and cellular blackouts — with zero internet.
+              The basic flow from someone asking for help to a team reaching them.
             </p>
           </div>
           <div class="section-watermark" aria-hidden="true">01</div>
@@ -318,59 +299,58 @@
           <article class="step-card-v2 reveal">
             <div class="step-badge-num">1</div>
             <h4>Connect to Base</h4>
-            <p>Connect smartphone to open <code>Trinode-Emergency</code> Wi-Fi. Captive portal opens in browser. Zero app install, SIM card, or data plan required.</p>
+            <p>Join the <code>Trinode-Emergency</code> Wi-Fi at the camp. The app opens in the phone browser, so no install, SIM or data is needed.</p>
           </article>
 
           <!-- Step 2 -->
           <article class="step-card-v2 reveal reveal-delay-1">
             <div class="step-badge-num">2</div>
             <h4>Submit Request</h4>
-            <p>Select needed aid (Rescue, Medical, Food, Water, Shelter), tap urgency, and attach landmarks or offline GPS coordinates in seconds.</p>
+            <p>Pick what you need (rescue, medical, food, water or shelter), set how urgent it is and add a nearby landmark.</p>
           </article>
 
           <!-- Step 3 -->
           <article class="step-card-v2 reveal reveal-delay-2">
             <div class="step-badge-num">3</div>
             <h4>Store &amp; Forward</h4>
-            <p>Far from base? Request queues safely in phone IndexedDB outbox. Sends automatically the moment anyone walks within Wi-Fi range.</p>
+            <p>If you are out of range, the request is saved on the phone (IndexedDB) and sent when the phone is back in Wi-Fi range.</p>
           </article>
 
           <!-- Step 4 -->
           <article class="step-card-v2 reveal reveal-delay-3">
             <div class="step-badge-num">4</div>
             <h4>Coordinator Triage</h4>
-            <p>Incident commanders view live incoming tickets on laptop dashboard, detect duplicates, and assign available boat or foot squads.</p>
+            <p>Coordinators see new requests on the dashboard, check for duplicates and assign a team.</p>
           </article>
 
           <!-- Step 5 -->
           <article class="step-card-v2 reveal reveal-delay-4">
             <div class="step-badge-num">5</div>
-            <h4>Verified Rescue</h4>
-            <p>Field teams navigate to coordinates, mark tasks complete, and update safe shelter capacity automatically across the network.</p>
+            <h4>Rescue</h4>
+            <p>The team goes to the location, marks the task as done and shelter numbers are updated.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FEATURES & ARCHITECTURE  -->
+    <!-- features -->
     <section class="section" id="features">
       <div class="container">
         <div class="section-header-wrap reveal">
           <div class="section-header--left">
-            <div class="section-tag-pill">THE FEATURES</div>
-            <h2 class="section-title">Engineered for total blackout resilience.</h2>
+            <div class="section-tag-pill">FEATURES</div>
+            <h2 class="section-title">Main features</h2>
             <p class="section-subtitle">
-              Six foundational pillars guaranteeing zero data loss and life-saving coordination when cloud backbones collapse.
+              What the app does, based on the requirements we gathered.
             </p>
           </div>
           <div class="section-watermark" aria-hidden="true">02</div>
         </div>
 
         <div class="feature-grid">
-          <!-- Card 1 -->
           <article class="glass-panel glass-panel--interactive feature-card reveal">
             <h3>Emergency Help Reporting</h3>
-            <p>Submit rescue, medical, water, and shelter requests with urgency indicators, headcount, and specific landmarks in a few taps.</p>
+            <p>Send rescue, medical, water or shelter requests with an urgency level, number of people and a landmark.</p>
             <div class="feature-tag-list">
               <span class="feature-tag">Medical</span>
               <span class="feature-tag">Rescue</span>
@@ -379,32 +359,29 @@
             </div>
           </article>
 
-          <!-- Card 2 -->
           <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-1">
-            <h3>Offline-First Technology</h3>
-            <p>Built with IndexedDB client-side persistence and Service Workers. Requests are saved safely on the phone even with zero wireless connectivity.</p>
+            <h3>Works Offline</h3>
+            <p>Uses IndexedDB and a service worker so requests are saved on the phone even when there is no connection.</p>
             <div class="feature-tag-list">
               <span class="feature-tag">IndexedDB</span>
               <span class="feature-tag">PWA</span>
-              <span class="feature-tag">Zero Data Loss</span>
+              <span class="feature-tag">Service Worker</span>
             </div>
           </article>
 
-          <!-- Card 3 -->
           <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-2">
-            <h3>Real-Time Request Tracking</h3>
-            <p>Victims receive psychological certainty through a clear status journey: Queued on phone → Sent to base → Acknowledged → Dispatched → Resolved.</p>
+            <h3>Request Tracking</h3>
+            <p>People can see where their request is: Queued → Sent → Acknowledged → Dispatched → Resolved.</p>
             <div class="feature-tag-list">
               <span class="feature-tag">Audit Trail</span>
               <span class="feature-tag">Status Stepper</span>
-              <span class="feature-tag">Transparency</span>
+              <span class="feature-tag">Status Updates</span>
             </div>
           </article>
 
-          <!-- Card 4 -->
           <article class="glass-panel glass-panel--interactive feature-card reveal">
             <h3>Rescue Team Management</h3>
-            <p>Assign specific relief missions to volunteers. Teams mark completed tasks with single-tap field feedback ("Was everyone helped?").</p>
+            <p>Coordinators assign tasks to volunteers and teams. When a task is done the team answers "Was everyone helped?".</p>
             <div class="feature-tag-list">
               <span class="feature-tag">Task Queues</span>
               <span class="feature-tag">Field Teams</span>
@@ -412,47 +389,44 @@
             </div>
           </article>
 
-          <!-- Card 5 -->
           <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-1">
             <h3>Safe Zones &amp; Shelter Directory</h3>
-            <p>Civilians and responders see live capacity bars (e.g. 54 / 120 people) and key facility indicators (Power, Potable Water, Medical staff).</p>
+            <p>Shows how full each shelter is (e.g. 54 / 120 people) and whether it has power, drinking water and medical staff.</p>
             <div class="feature-tag-list">
               <span class="feature-tag">Capacity Bars</span>
               <span class="feature-tag">Amenity Badges</span>
-              <span class="feature-tag">Anti-Crowding</span>
+              <span class="feature-tag">Facilities</span>
             </div>
           </article>
 
-          <!-- Card 6 -->
           <article class="glass-panel glass-panel--interactive feature-card reveal reveal-delay-2">
-            <h3>Store-and-Forward Mesh</h3>
-            <p>Responders traveling between remote camps and the incident base automatically synchronize queues as soon as their devices pass within range.</p>
+            <h3>Store and Forward Sync</h3>
+            <p>Phones carried between camps sync their saved requests when they come into range of a base node.</p>
             <div class="feature-tag-list">
-              <span class="feature-tag">Delay Tolerant</span>
+              <span class="feature-tag">Offline Queue</span>
               <span class="feature-tag">Mule Sync</span>
-              <span class="feature-tag">Auto Reconciliation</span>
+              <span class="feature-tag">UUIDs</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- WHO IT'S FOR -->
+    <!-- roles -->
     <section class="section" id="roles">
       <div class="container">
         <div class="section-header-wrap reveal">
           <div class="section-header--left">
             <div class="section-tag-pill">WHO IT'S FOR</div>
-            <h2 class="section-title">Four roles, one unified emergency network.</h2>
+            <h2 class="section-title">Who uses Trinode</h2>
             <p class="section-subtitle">
-              Tailored interfaces built for every person in the disaster perimeter, from panicked civilians to frontline rescue boat captains.
+              The app has four user roles, each with its own set of screens.
             </p>
           </div>
           <div class="section-watermark" aria-hidden="true">03</div>
         </div>
 
         <div class="roles-grid">
-          <!-- Role 1: Resident -->
           <article class="role-card-v2 reveal">
             <div class="role-icon-box">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -461,11 +435,10 @@
               </svg>
             </div>
             <h4>Resident / Civilian</h4>
-            <p>Submit emergency rescue, medical, food, or water requests in seconds. Track request progress live and view available safe shelters without any account or password.</p>
+            <p>Send rescue, medical, food or water requests, follow their progress and find nearby shelters. No account needed.</p>
             <span class="role-tag-bottom">Screens A1–A2 · R1–R13</span>
           </article>
 
-          <!-- Role 2: Volunteer -->
           <article class="role-card-v2 reveal reveal-delay-1">
             <div class="role-icon-box">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -476,23 +449,21 @@
               </svg>
             </div>
             <h4>Community Volunteer</h4>
-            <p>Enter name once. Receive safe, community-focused tasks like water distribution and elder checks. Report on behalf of neighbors with safe-task validation guardrails.</p>
+            <p>Enter a name once and get simple tasks like handing out water or checking on elderly people. Can also report for neighbours.</p>
             <span class="role-tag-bottom">Screens V1–V5</span>
           </article>
 
-          <!-- Role 3: Rescue Team -->
           <article class="role-card-v2 reveal reveal-delay-2">
             <div class="role-icon-box">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
               </svg>
             </div>
-            <h4>Rescue &amp; Boat Flotilla</h4>
-            <p>Navy, Red Cross, and volunteer flotillas sign in with secure PIN. Receive prioritized mission coordinates, navigate to landmarks, and log rescued civilians to shelters.</p>
+            <h4>Rescue Team</h4>
+            <p>Rescue teams sign in with a PIN, get their assigned tasks in order of urgency and record which shelter people were taken to.</p>
             <span class="role-tag-bottom">Screens T1–T4</span>
           </article>
 
-          <!-- Role 4: Coordinator -->
           <article class="role-card-v2 reveal reveal-delay-3">
             <div class="role-icon-box">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -502,35 +473,34 @@
               </svg>
             </div>
             <h4>Camp Coordinator</h4>
-            <p>Incident commanders operate live triage boards on servers. Filter duplicate requests, dispatch teams, manage shelter space, and export CSV audit logs.</p>
+            <p>Camp staff use the triage board to sort requests, merge duplicates, assign teams, manage shelter space and export CSV logs.</p>
             <span class="role-tag-bottom">Screens D1–D11 · C1</span>
           </article>
         </div>
       </div>
     </section>
 
-    <!--  WIREFRAME SHOWCASE & INTERACTIVE INSPECTOR  -->
+    <!-- wireframes -->
     <section class="section wireframe-showcase" id="wireframes">
       <div class="container">
         <div class="section-header-wrap reveal">
           <div class="section-header--left">
-            <div class="section-tag-pill">MOBILE &amp; DESKTOP PROTOTYPES</div>
-            <h2 class="section-title">The complete 9-screen production flow.</h2>
+            <div class="section-tag-pill">WIREFRAMES</div>
+            <h2 class="section-title">Wireframes</h2>
             <p class="section-subtitle">
-              Explore every screen built for high-stress disaster response. Hover or click any phone mockup to inspect UX annotations, error recovery logic, and field specifications.
+              Our nine mobile wireframes. Click a screen to see more details and the reasoning behind it.
             </p>
           </div>
           <div class="section-watermark" aria-hidden="true">04</div>
         </div>
 
-        <!-- Filter Tabs (Dark Theme Styled) -->
+        <!-- filter tabs -->
         <div class="wireframe-filter-bar reveal">
           <button type="button" class="filter-btn active" data-filter="resident">Resident Flow (M1–M4)</button>
           <button type="button" class="filter-btn" data-filter="volunteer">Volunteer Flow (M5–M7)</button>
-          <button type="button" class="filter-btn" data-filter="coordinator">Coordinator Suite (M8–M9)</button>
+          <button type="button" class="filter-btn" data-filter="coordinator">Coordinator (M8–M9)</button>
         </div>
 
-        <!-- 9 Wireframe Phone Cards Showcase  -->
         <div class="phone-showcase-grid wireframe-grid">
           <!-- Screen M1 -->
           <article class="phone-showcase-card wf-card reveal" data-category="resident" data-wfid="M1">
@@ -556,7 +526,7 @@
                 <span class="phone-cat-pill">Resident Flow</span>
               </div>
               <h4 class="phone-card-title">Role &amp; Base Sync</h4>
-              <p class="phone-card-desc">Prominent "Connected to base" status with immediate role selection (Resident, Volunteer, Coordinator).</p>
+              <p class="phone-card-desc">Shows "Connected to base" and lets the user pick a role (Resident, Volunteer, Coordinator).</p>
             </div>
           </article>
 
@@ -584,7 +554,7 @@
                 <span class="phone-cat-pill">Emergency Form</span>
               </div>
               <h4 class="phone-card-title">Emergency Help Request</h4>
-              <p class="phone-card-desc">Tap-friendly triage categories (Medical, Shelter, Water, Food, Rescue) with urgency levels and landmarks.</p>
+              <p class="phone-card-desc">Large buttons for request type (Medical, Shelter, Water, Food, Rescue), urgency and landmark.</p>
             </div>
           </article>
 
@@ -612,7 +582,7 @@
                 <span class="phone-cat-pill">Error Resilience</span>
               </div>
               <h4 class="phone-card-title">Offline Validation &amp; Errors</h4>
-              <p class="phone-card-desc">Reassuring UX banner keeping all entered data intact without loss during severe signal dropouts.</p>
+              <p class="phone-card-desc">Shows what needs fixing and tells the user their answers have been kept.</p>
             </div>
           </article>
 
@@ -640,7 +610,7 @@
                 <span class="phone-cat-pill">Confirmation</span>
               </div>
               <h4 class="phone-card-title">Request Saved Offline</h4>
-              <p class="phone-card-desc">Clear reassurance that ticket <code>LF-7F3A</code> is queued locally and will transmit automatically upon reconnect.</p>
+              <p class="phone-card-desc">Confirms that ticket <code>LF-7F3A</code> is saved on the phone and will be sent when it reconnects.</p>
             </div>
           </article>
 
@@ -668,7 +638,7 @@
                 <span class="phone-cat-pill">Sync Tracker</span>
               </div>
               <h4 class="phone-card-title">My Requests &amp; Local Queue</h4>
-              <p class="phone-card-desc">Tracks all requests made on device: 2 waiting to send, dispatched rescue units, and resolved medical tickets.</p>
+              <p class="phone-card-desc">Lists requests made on this phone, e.g. 2 waiting to send, one dispatched and one resolved.</p>
             </div>
           </article>
 
@@ -696,7 +666,7 @@
                 <span class="phone-cat-pill">Lifecycle Stepper</span>
               </div>
               <h4 class="phone-card-title">Request Progress Stepper</h4>
-              <p class="phone-card-desc">Full status timeline: Queued → Sent → Acknowledged by Coordinator → Dispatched (Team B) → Resolved.</p>
+              <p class="phone-card-desc">Status timeline: Queued → Sent → Acknowledged → Dispatched (Team B) → Resolved.</p>
             </div>
           </article>
 
@@ -724,7 +694,7 @@
                 <span class="phone-cat-pill">Volunteer Tasks</span>
               </div>
               <h4 class="phone-card-title">Volunteer Task Management</h4>
-              <p class="phone-card-desc">Red-highlighted urgent missions: Rescue 4 people, water rising. One-tap "Mark as done" verification sheet.</p>
+              <p class="phone-card-desc">Urgent tasks are shown in red at the top, e.g. "Rescue 4 people, water rising", with a "Mark as done" button.</p>
             </div>
           </article>
 
@@ -752,7 +722,7 @@
                 <span class="phone-cat-pill">Shelters Directory</span>
               </div>
               <h4 class="phone-card-title">Safe Zones &amp; Shelters</h4>
-              <p class="phone-card-desc">Sorted by available space: Temple hall (66 spaces), Gampola MV (20 spaces). Live power/water/medical tags.</p>
+              <p class="phone-card-desc">Sorted by free space, e.g. Temple hall (66 spaces), Gampola MV (20 spaces), with power/water/medical tags.</p>
             </div>
           </article>
 
@@ -780,7 +750,7 @@
                 <span class="phone-cat-pill">Command Triage</span>
               </div>
               <h4 class="phone-card-title">Coordinator Mobile Triage</h4>
-              <p class="phone-card-desc">Live ticket board: 12 Live, 7 Open, 3 Acknowledged, 4 Dispatched. Urgent sorting &amp; duplicate detection.</p>
+              <p class="phone-card-desc">Ticket counts by status, urgent requests first, and duplicate detection.</p>
             </div>
           </article>
         </div>
@@ -788,16 +758,16 @@
 
     </section>
 
-    <!--  MEET THE TEAM  -->
+    <!-- team -->
 
     <section class="section" id="team">
       <div class="container">
         <div class="section-header-wrap reveal">
           <div class="section-header--left">
             <div class="section-tag-pill">MEET THE TEAM</div>
-            <h2 class="section-title">Built by students, for real-world impact.</h2>
+            <h2 class="section-title">Our team</h2>
             <p class="section-subtitle">
-              We are Computer Science undergraduates at Informatics Institute of Technology, affiliated with the University of Westminster — united by a mission to save lives when infrastructure fails.
+              We are ATP group CS-08, Computer Science students at the Informatics Institute of Technology (University of Westminster).
             </p>
           </div>
           <div class="section-watermark" aria-hidden="true">05</div>
@@ -808,7 +778,7 @@
           <!-- Member 1: Mulani -->
           <article class="team-card reveal reveal-delay-1">
             <div class="team-avatar-wrap">
-              <img src="assets/team/Mulani.jpeg" alt="Mulani" loading="lazy">
+              <img src="assets/team/Mulani.jpeg" alt="Mulani Methara" loading="lazy">
             </div>
             <h4>Mulani Methara</h4>
             <span class="team-role">Frontend Developer</span>
@@ -845,13 +815,13 @@
             </div>
           </article>
 
-          <!-- Member 3: Sesadi Hewamadduma-->
+          <!-- Member 3: Sesadi -->
           <article class="team-card reveal reveal-delay-3">
             <div class="team-avatar-wrap">
-              <img src="assets/team/Sesadi.jpeg" alt="Himansha Dias" loading="lazy">
+              <img src="assets/team/Sesadi.jpeg" alt="Sesadi Hewamadduma" loading="lazy">
             </div>
             <h4>Sesadi Hewamadduma</h4>
-            <span class="team-role"> UI/UX Designer </span>
+            <span class="team-role">UI/UX Designer</span>
             <div class="team-social">
               <a href="https://www.linkedin.com/in/sesadi-hewamadduma/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="team-social-link">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -865,18 +835,18 @@
             </div>
           </article>
 
-          <!-- Member 4: Chanka-->
+          <!-- Member 4: Chanka -->
           <article class="team-card reveal reveal-delay-4">
             <div class="team-avatar-wrap">
-              <img src="assets/team/Chanka.jpeg" alt="Himansha Dias" loading="lazy">
+              <img src="assets/team/Chanka.jpeg" alt="Chanka Nethmi" loading="lazy">
             </div>
             <h4>Chanka Nethmi</h4>
-            <span class="team-role"> Backend Developer </span>
+            <span class="team-role">Backend Developer</span>
             <div class="team-social">
               <a href="https://www.linkedin.com/in/chanka-bandaranayake-bb4676395/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="team-social-link">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </a>
-              <a href="mailto :chanka.20250400@iit.ac.lk" aria-label="Email" class="team-social-link">
+              <a href="mailto:chanka.20250400@iit.ac.lk" aria-label="Email" class="team-social-link">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </a>
               <a href="https://github.com/chanka400" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="team-social-link">
@@ -891,7 +861,7 @@
               <span>DA</span>
             </div>
             <h4>Dithira Abhiman</h4>
-            <span class="team-role"> QA and Testing / Devops Engineer </span>
+            <span class="team-role">QA / DevOps</span>
             <div class="team-social">
               <a href="mailto:dithira.20240482@iit.ac.lk" aria-label="Email" class="team-social-link">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -900,7 +870,7 @@
           </article>
         </div>
 
-        <!-- Academic Affiliation Badge -->
+        <!-- uni badge -->
         <div class="team-affiliation reveal" style="text-align: center; margin-top: 48px;">
           <div style="display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-full); box-shadow: var(--shadow-sm);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -913,37 +883,28 @@
       </div>
     </section>
 
-    <!--  CONTACT & DEMO REQUEST -->
+    <!-- contact -->
     <section class="section" id="demo-request">
       <div class="container">
         <div class="cta-banner reveal">
           <div class="cta-grid">
-            <!-- Left Info Column -->
             <div class="cta-info">
-              <div class="section-tag-pill">PARTNER &amp; EVALUATE</div>
-              <h2>Prepare Your Region Before the Next Blackout Strikes.</h2>
+              <div class="section-tag-pill">CONTACT</div>
+              <h2>Get in touch</h2>
               <p>
-                Whether you lead a disaster management agency, a volunteer rescue flotilla, or an academic evaluation committee, 
-                our engineering team will conduct a tailored briefing and simulate a live blackout coordination drill with your squad.
+                Have feedback on the project or want to see a demo? Send us a message using the form or email us directly.
               </p>
 
-              <!-- Direct Contact Channels (Email, WhatsApp, Instagram) -->
               <div class="contact-channels">
-                <a href="mailto :atpcs08@gmail.com  " class="contact-channel-item">
+                <a href="mailto:atpcs08@gmail.com" class="contact-channel-item">
                   <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                   <div>
-                    <strong style="display:block; font-size:0.95rem;">Official Email</strong>
-                    <span style="font-size:0.84rem; color:var(--text-muted);">atpcs08@gmail.com </span>
+                    <strong style="display:block; font-size:0.95rem;">Email</strong>
+                    <span style="font-size:0.84rem; color:var(--text-muted);">atpcs08@gmail.com</span>
                   </div>
-                </a>
-
-                <a href="#" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
-                  <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                  </svg>
                 </a>
 
                 <div class="contact-channel-item" style="cursor: default;">
@@ -959,42 +920,40 @@
               </div>
             </div>
 
-            <!-- Right Interactive Form -->
             <div>
               <form class="cta-form" id="demo-request-form" novalidate>
-                <h3>Request an Agency Demonstration</h3>
+                <h3>Send us a message</h3>
                 <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
-                  Complete this brief form to schedule an offline mesh demonstration or pilot deployment.
+                  Fill this in and it will open an email (or WhatsApp) with your details.
                 </p>
 
-                <!-- Success Banner -->
                 <div class="form-success-banner" role="status" aria-live="polite"></div>
 
                 <div class="form-group">
                   <label for="form-name" class="form-label">Full Name <span class="req">*</span></label>
-                  <input type="text" id="form-name" class="form-control" placeholder="e.g. Captain Samantha Silva" required>
+                  <input type="text" id="form-name" class="form-control" placeholder="Your name" required>
                   <span class="form-error-msg">Please enter your name.</span>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-agency" class="form-label">Organization / Response Unit <span class="req">*</span></label>
-                  <input type="text" id="form-agency" class="form-control" placeholder="e.g. Sri Lanka Red Cross / Gampola Volunteer Flotilla" required>
-                  <span class="form-error-msg">Please enter your agency.</span>
+                  <label for="form-agency" class="form-label">Organisation <span class="req">*</span></label>
+                  <input type="text" id="form-agency" class="form-control" placeholder="e.g. IIT, DMC, a volunteer group" required>
+                  <span class="form-error-msg">Please enter your organisation.</span>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-contact" class="form-label">Official Email or WhatsApp Number <span class="req">*</span></label>
-                  <input type="text" id="form-contact" class="form-control" placeholder="e.g. s.silva@redcross.lk or +94 71 234 5678" required>
+                  <label for="form-contact" class="form-label">Email or WhatsApp Number <span class="req">*</span></label>
+                  <input type="text" id="form-contact" class="form-control" placeholder="e.g. name@example.com or 07X XXX XXXX" required>
                   <span class="form-error-msg">Please enter a valid contact method.</span>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-region" class="form-label">Target Region / District</label>
-                  <input type="text" id="form-region" class="form-control" placeholder="e.g. Kandy, Ratnapura, Gampaha, Badulla">
+                  <label for="form-region" class="form-label">District</label>
+                  <input type="text" id="form-region" class="form-control" placeholder="e.g. Kandy">
                 </div>
 
                 <div class="form-group">
-                  <label for="form-scale" class="form-label">Estimated Pilot Scale</label>
+                  <label for="form-scale" class="form-label">Area Size</label>
                   <select id="form-scale" class="form-control">
                     <option value="Single Relief Camp (1-2 Nodes)">Single Relief Camp (1–2 Nodes)</option>
                     <option value="Divisional Secretariate (5-10 Nodes)">Divisional Secretariat (5–10 Nodes)</option>
@@ -1003,12 +962,12 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="form-notes" class="form-label">Specific Blackout Concerns or Inquiries</label>
-                  <textarea id="form-notes" class="form-control" rows="3" placeholder="Tell us about terrain, typical flood durations, or power reliability in your zone..."></textarea>
+                  <label for="form-notes" class="form-label">Message</label>
+                  <textarea id="form-notes" class="form-control" rows="3" placeholder="Your message"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn--teal" style="width: 100%; margin-top: 8px;">
-                  <span>Submit Demo Request</span>
+                  <span>Send</span>
                   <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -1023,33 +982,30 @@
 
   </main>
 
-  <!--  FOOTER -->
+  <!-- footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand Info -->
         <div class="footer-col footer-col--brand">
           <a href="#hero" class="brand-wrap footer-brand-title" aria-label="Trinode Home">
             <img src="assets/illustrations/trinode-logo.png" alt="Trinode Logo" class="brand-logo-icon">
             <span class="brand-text">Trinode</span>
           </a>
           <p class="footer-col-desc">
-            Built by ATP Group CS-08 in collaboration with DMC Sri Lanka &amp; Red Cross.
+            ATP Group Project, CS-08.
           </p>
         </div>
 
-        <!-- Contact Column -->
         <div class="footer-col">
           <span class="footer-col-heading">Contact</span>
           <a href="mailto:atpcs08@gmail.com" class="footer-link footer-email">atpcs08@gmail.com</a>
           <span class="footer-col-sub">Informatics Institute of Technology, Sri Lanka</span>
         </div>
 
-        <!-- Social Column -->
         <div class="footer-col">
           <span class="footer-col-heading">Social</span>
           <div class="footer-inline-links">
-            <a href="https://www.instagram.com/trinode_official/ target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+            <a href="https://www.instagram.com/trinode_official/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
             <span class="footer-sep">|</span>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-link">Facebook</a>
             <span class="footer-sep">|</span>
@@ -1057,28 +1013,26 @@
           </div>
         </div>
 
-        <!-- Legal Column -->
         <div class="footer-col">
           <span class="footer-col-heading">Legal</span>
           <a href="#privacy" class="footer-link" id="footer-privacy-btn">Privacy Notice</a>
         </div>
       </div>
 
-      <!-- Bottom Copyright Line -->
       <div class="footer-copyright">
-        <p>© 2026 Trinode. All rights reserved.</p>
+        <p>© 2026 ATP Group CS-08, Informatics Institute of Technology</p>
       </div>
     </div>
   </footer>
 
-  <!--  WIREFRAME MODAL LIGHTBOX / INSPECTOR -->
+  <!-- wireframe popup -->
   <div class="modal-backdrop" id="wf-modal" role="dialog" aria-modal="true" aria-labelledby="modal-wf-title">
     <div class="modal-window">
-      <button type="button" class="modal-close-btn" aria-label="Close modal window">✕</button>
+      <button type="button" class="modal-close-btn" aria-label="Close">&times;</button>
       
       <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 16px;">
         <span class="wf-id-badge" id="modal-wf-badge">M1</span>
-        <h3 id="modal-wf-title" style="font-size: 1.6rem; color: var(--text-white);">Wireframe Title</h3>
+        <h3 id="modal-wf-title" style="font-size: 1.6rem; color: var(--text-primary);">Wireframe Title</h3>
       </div>
 
       <div style="display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start;">
@@ -1088,30 +1042,27 @@
 
         <div style="display: flex; flex-direction: column; gap: 14px;">
           <div>
-            <h4 style="font-size: 1.05rem; color: var(--teal-300); margin-bottom: 4px;">Functional Overview</h4>
+            <h4 style="font-size: 1.05rem; color: var(--teal-300); margin-bottom: 4px;">What this screen does</h4>
             <p id="modal-wf-desc" style="font-size: 0.95rem; color: var(--text-light); line-height: 1.6;"></p>
           </div>
 
           <div style="background: rgba(20, 184, 166, 0.08); border: 1px solid var(--teal-border); border-radius: var(--radius-sm); padding: 16px;">
             <h4 style="font-size: 0.92rem; color: var(--teal-300); margin-bottom: 6px; font-family: var(--font-mono); text-transform: uppercase;">
-              Field UX &amp; Resiliency Rationale
+              Design Notes
             </h4>
             <p id="modal-wf-notes" style="font-size: 0.88rem; color: var(--text-light); line-height: 1.55;"></p>
           </div>
 
           <div style="display: flex; justify-content: flex-end; margin-top: 8px;">
-            <button type="button" class="btn btn--secondary btn--sm" onclick="document.getElementById('wf-modal').classList.remove('open'); document.body.style.overflow = '';">
-              Close Inspector
+            <button type="button" class="btn btn--teal btn--sm" onclick="document.getElementById('wf-modal').classList.remove('open'); document.body.style.overflow = '';">
+              Close
             </button>
           </div>
-          <div class="map">
-	
-        </div>
+          </div>
       </div>
     </div>
   </div>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
